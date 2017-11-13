@@ -1,0 +1,109 @@
+      <% content_for :title, "Адвокатский кабинет Молозиной Е. Н. - адвокаты, юристы - Липецк" %>
+      <section class="well well4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <%= @about_us.title.html_safe %>
+              <%= @about_us.description.html_safe %>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <%= @history.title.html_safe %>
+              <%= @history.description.html_safe %>
+
+              <% @news.each do |news| %>
+              <article class='media'>
+                <div class="media-left text-center">
+                  <time datetime='2015'><%= news.title %></time>
+                </div>
+                <div class="media-body">                  
+                  <p><%= news.description %></p>
+                </div>
+              </article>
+              <% end %>
+
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <%= @jobs.title.html_safe %>
+              <%= @jobs.description.html_safe %>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container">
+          <div class="row center-block">
+              <a href="/contacts">
+              <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
+                  СВЯЗАТЬСЯ С НАМИ
+              </button>
+              </a>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <section class="well well4 bg1 wow fadeIn" data-wow-duration='3s'>
+        <div class="container">
+        <h2>
+          <small>
+	    наши
+          </small>
+          партнеры
+        </h2>
+          <div class="row offs3 center767">
+            <% @teams.each do |team| %>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="thumbnail1">
+                <img class="" src="<%= team.image.url if team.image_stored? %>" alt="">
+                <div class="caption">
+                  <h4>
+                    <a href="#">
+                      <%= team.title %>
+                    </a>
+                  </h4>
+                  <p>
+                    <%= team.description %>
+                  </p>
+                </div>  
+             </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+      </section>    
+
+      <section class="well well5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <h3>
+                <%= @art1.title %>
+              </h3>
+              <%= @art1.description.html_safe %>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <h3>
+                <%= @art2.title %>
+              </h3>
+              <%= @art2.description.html_safe %>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <h3>
+                <%= @art3.title %>
+              </h3>
+              <blockquote class="media offs3">   
+                <div class="media-left media_ins1">
+                  <img src="<%= @art3.image.url if @art3.image_stored? %>" alt="">
+                </div>             
+                <div class="media-body">              
+                <%= @art3.description.html_safe %>
+                </div>
+              </blockquote>
+                           
+            </div>
+          </div>
+        </div>
+      </section>

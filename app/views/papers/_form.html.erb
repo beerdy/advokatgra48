@@ -1,0 +1,40 @@
+<div class="container">
+
+  <div class="blog-header">
+    <h1 class="blog-title">The Bootstrap Blog</h1>
+    <p class="lead blog-description" style="text-transform: uppercase;">Все самое интересное в сфере адвокатской деятельности - тут</p>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+
+      <div class="blog-post">
+        <% title,p_time,author = @paper.title.split(';') %>
+        <h2 class="blog-post-title"><%= title %></h2>
+        <p class="blog-post-meta"><%= p_time %><a href="#"> <%= author %></a></p>
+        <%= @paper.description.html_safe %>
+      </div><!-- /.blog-post -->
+    </div><!-- /.blog-main -->
+
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <div class="sidebar-module sidebar-module-inset">
+        <h4>О чем мы</h4>
+        <p>В данном блоке адвокат <em>Молозина Елена Николаевна</em> освещает важные события, произошедшие в сфере адвокатской деятельности. Также в этом разделе приведено немало полезной информации для физических и юридических лиц. Здесь вы сможете найти ответы на все интересующие вопросы.</p>
+      </div>
+      <br />
+      <div class="sidebar-module">
+        <h4>Статьи</h4>
+        <ol class="list-unstyled">
+        <% Paper.all.each do |paper| %>
+          <% a,b,c = paper.title.split(';')%>
+          <li><%= link_to a, paper %></li>
+        <% end %>
+        </ol>
+      </div>
+    </div><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+</div>
+
+<br />
+<br />

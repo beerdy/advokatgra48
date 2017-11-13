@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @adward.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @adward.description %>
+</p>
+
+<p>
+  <strong>Slave:</strong>
+  <%= @adward.slave %>
+</p>
+
+<p>
+  <strong>Image uid:</strong>
+  <%= @adward.image_uid %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @adward.url %>
+</p>
+
+<%= link_to 'Edit', edit_adward_path(@adward) %> |
+<%= link_to 'Back', adwards_path %>

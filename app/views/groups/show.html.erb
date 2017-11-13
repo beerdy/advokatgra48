@@ -1,0 +1,88 @@
+
+<section class="well well4">
+        <div class="container center991">
+          <h2>
+            НАШИ
+            <small>
+              УСЛУГИ
+            </small>
+          </h2>
+          <div class="row offs3">
+            <div class="copied1" id="copied1">
+              <div class="col-md-8 col-sm-12 col-xs-12 copied1">
+                <table class="table table-striped">
+                  <caption style='text-transform: uppercase; color: #222533'><%= @group.title %></caption>
+                  <thead class="head">
+                    <tr style="background-color: #222533; color: white;">
+                      <th>#</th>
+                      <th class="text-left">ВИД УСЛУГИ</th>
+                      <th class="text-right">СТОИМОСТЬ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% @group.services.each.with_index do |service,index| %>
+                    <tr>
+                      <td><%= index %></td>
+                      <td class="text-left"><%= service.title %></td>
+                      <td class="text-right"><%= service.url %></td>
+                    </tr>
+                    <% end %>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="copied2" id="copied2">
+              <div class="col-md-4 col-sm-12 col-xs-12 copied2" id='block2' style="margin-top: 2.5em">
+                  <ul class="marked-list offs3">
+                    <% @groups.all.each do |group| %>
+                    <li>
+                      <%= link_to group.title, group %>
+                      </a>
+                    </li>
+                    <% end %>
+                  </ul>
+                  <a href="/contacts">
+                  <br />
+                  <button id="singlebutton" name="singlebutton" class="btn btn-primary">
+                      СВЯЗАТЬСЯ С НАМИ
+                  </button>
+                  </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <script type="text/javascript">
+          $( window ).resize(function() {
+            var width = $(window).width();
+            var el1 = $('#copied1');
+            var el2 = $('#copied2');
+
+            var class1 = el1.attr('class');
+            var class2 = el2.attr('class');
+
+            if( width < 975 ){
+              if( class1 == 'copied1'){
+                var copied1 = el1.html();
+                var copied2 = el2.html();
+                el1.empty().append(copied2);
+                el2.empty().append(copied1);
+
+                el1.removeClass('copied1').addClass('copied2');
+                el2.removeClass('copied2').addClass('copied1');
+              }
+            } else {
+              if( class1 == 'copied2'){
+                var copied1 = el1.html();
+                var copied2 = el2.html();
+                el1.empty().append(copied2);
+                el2.empty().append(copied1);
+
+                el1.removeClass('copied2').addClass('copied1');
+                el2.removeClass('copied1').addClass('copied2');
+              }
+            }
+          });
+        </script>
+</section>

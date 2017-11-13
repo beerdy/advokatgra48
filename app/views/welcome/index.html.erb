@@ -1,0 +1,202 @@
+      <% content_for :title, "Адвокатский кабинет Молозиной Е. Н. - адвокаты, юристы - Липецк" %>
+      <section class="well well1 well1_ins1">
+        <div class="camera_container">
+          <div id="camera" class="camera_wrap">
+            <% @slider.each.with_index do |slider,i| %>
+            <div data-src="<%= "/assets/sl#{i+1}.jpg" %>">
+              <div class="camera_caption fadeIn">
+                <div class="jumbotron jumbotron1">
+                  <em>
+                    <%= slider.title %>
+                  </em>
+                  <div class="wrap">
+                    <p>
+                      <%= slider.description %>
+                    </p>
+                    <a href="#" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+
+        <div class="container center991">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="<%= @info1.image.url %>" alt="">
+                <div class="caption bg2">
+                  <h3>
+                    <%= @info1.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @info1.description %>
+                    </p>
+                    <a href="<%= @info1.url %>" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="<%= @info2.image.url %>" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    <%= @info2.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p class="thumb_ins1">
+                      <%= @info2.description %>
+                    </p>
+                    <a href="<%= @info2.url %>" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="row wow fadeIn" data-wow-duration='2s'>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="<%= @info3.image.url %>" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    <%= @info3.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @info3.description %>
+                    </p>
+                    <a href="<%= @info3.url %>" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="<%= @info4.image.url %>" alt="">
+                <div class="caption bg-primary">
+                  <h3>
+                    <%= @info4.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @info4.description %>
+                    </p>
+                    <a href="<%= @info4.url %>" class="btn-link fa-angle-right"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="<%= @info5.image.url %>" alt="">
+                <div class="caption bg2">
+                  <h3>
+                    <%= @info5.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @info5.description %>
+                    </p>
+                    <a href="<%= @info5.url %>" class="btn-link fa-angle-right"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="well well2 wow fadeIn  bg1" data-wow-duration='3s'>
+        <div class="container">
+        <%= @hello.title.html_safe %>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <p>
+                <%= @hello.description %>
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p>
+                <%= @hello.slave %>
+                <a href="<%= @hello.url %>" class="btn-link l-h1 fa-angle-right"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="well well2">
+        <div class="container">
+        <h2>
+          полезные
+          <small>
+            ссылки
+          </small>
+        </h2>
+          <div class="row offs1">
+            <div class="col-md-6 col-sm-12">
+              <ul class="link-list wow fadeInLeft" data-wow-duration='3s'>
+                  <li>
+                    <a href="http://lipetsk.spravochnikov.ru/groups/sudy">Суды в Липецке</a>
+                    <a href="http://lipetsk.spravochnikov.ru/groups/sudy" class="btn-link l-h1 fa-angle-right"></a>
+                  </li>
+                  <li>
+                    <a href="http://www.lipprok.ru/">Прокуратуры в Липецке</a>
+                    <a href="http://www.lipprok.ru/" class="btn-link l-h1 fa-angle-right"></a>
+                  </li>
+                  <li>
+                    <a href="http://r48.fssprus.ru/">Судебные приставы</a>
+                    <a href="http://r48.fssprus.ru/" class="btn-link l-h1 fa-angle-right"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.nalog.ru/rn77/">ИФНС Липецкой области</a>
+                    <a href="https://www.nalog.ru/rn77/" class="btn-link l-h1 fa-angle-right"></a>
+                  </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <img class="width_img" src="/assets/page-1_img6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="well well3 parallax" data-url="<%= @slogan.image.url %>" data-mobile="
+      true" data-speed="0.9">
+        <div class="container">
+          <div class="wrap text-center">
+              <%= @slogan.description.html_safe %>
+              <%= @slogan.slave %>
+            </p>
+            <a href="/contacts" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ<span class="fa-angle-right"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="well well2">
+        <div class="container">
+          <h2>
+            наши 
+            <small>
+              награды
+            </small>
+          </h2>
+
+          <div class="row offs1">
+            <ul class="flex-list">
+              <% @clients.each do |client| %>
+              <li class="col-lg-3 col-sm-3 col-xs-6">
+                <a href="<%= client.url %>">
+                  <img src="<%= client.image.url %>" alt="">
+                </a>  
+              </li>
+              <% end %>
+            </ul>
+          </div>  
+        </div>
+      </section>
+

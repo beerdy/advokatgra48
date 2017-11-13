@@ -1,0 +1,116 @@
+      <section class="well well4">
+        <div class="container">
+          <h2 class='offs5'>
+            частые
+            <small>
+              услуги
+            </small>            
+          </h2>
+          <div class="row offs3">
+          <% count = 0 %>
+          <% @services.each do |service| %>
+            <% if service.serious and count < 3 %>
+            <% count += 1 %>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <a class="thumb" data-fancybox-group='1' href="<%= service.image.url %>">
+                <img class="" src="<%= service.image.url %>" alt="">
+                <span class='thumb_overlay'></span>
+              </a>
+              <p class="lead">
+                <%= service.title %>
+              </p>
+              <p class="ins767-1">
+                <%= service.slave %>     
+                <br /><br />
+              </p>
+            </div>
+            <% end %>
+          <% end %>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row center-block">
+              <a href="/contacts">
+              <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
+                  СВЯЗАТЬСЯ С НАМИ
+              </button>
+              </a>
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <section class="well well6 parallax parallax1" data-url="/assets/parallax2.jpg" data-mobile="
+      true" data-speed="0.7">
+        <div class="container">
+          <div class="wrap text-center">
+            <strong>
+            <%= Article.find(11).description.html_safe %>
+            </strong>            
+          </div>  
+        </div>        
+      </section>
+
+      <section class="well well2">
+        <div class="container">
+        <h2>
+          спец
+          <small>
+            предложения
+          </small>
+        </h2>
+          <div class="row offs1">
+            <div class="col-md-6 col-sm-12">
+              <ul class="link-list wow fadeInLeft" data-wow-duration='3s'>
+                <% count = 0 %>
+                <% Service.all.each do |service| %>
+                  <% ; next unless service.special; count += 1; break if count > 4 %>
+                  <li>
+                    <a href="#"><%= service.title %></a>
+                    <a href="#" class="btn-link l-h1 fa-angle-right"></a>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p>
+                <%= Article.find(10).description.html_safe %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>   
+
+      <section class="well well4">
+        <div class="container">
+          <h2>
+            наши
+            <small>
+              услуги
+            </small>            
+          </h2>
+          <br />
+
+          <div class="row row_offs">
+          <% count = 0 %>
+          <% @services.each do |service| %>
+            <% count += 1 %>
+            <div class="col-md-3 col-sm-6 col-xs-12 <%= 'clear991' if count.even? %>"> 
+              <img class="" src="<%= service.image.url %>" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">             
+              <p class="lead lead_offs2">
+                <%= service.title %>
+              </p>
+              <p class="ins767-1">
+                <%= service.slave %>
+                <br /><br />
+              </p>
+            </div>
+            <%= '</div><div class="row row_offs">'.html_safe unless @services.count == count if count.even? %>
+          <% end %>
+          </div>
+
+        </div>
+      </section>

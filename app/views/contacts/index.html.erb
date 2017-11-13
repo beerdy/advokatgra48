@@ -1,0 +1,41 @@
+<section class="well well4  map map_height1">
+  <div class="container">
+   
+        <h2>
+          обратная 
+          <small>
+           связь
+          </small>
+        </h2>
+        <%= render 'form' %>
+  </div>
+  <br />
+  <div class="container">
+    <div class="location">
+      <h2>
+        информация
+        <small>
+          о компании
+        </small>
+      </h2>  
+      <address>
+        <dl>
+          <dt>Телефон для связи: </dt>
+          <dd class="phone"><a href="callto:#" class='address-co'> <%= @info.phone %></a></dd>
+        </dl>
+        <dl>
+          <dt>Месторасположение: </dt>
+          <dd><span class='address-co'> <%= @info.description %></span></dd>
+        </dl>
+        <dl>
+          <dt>Часы работы офиса: </dt>
+          <dd><span class='address-co'> <%= @info.slave %></span></dd>
+        </dl>
+        <dl>
+          <dt>Электронный адрес: </dt>
+          <dd><a href="mailto:#" class='address-co'><%= @info.address %></a></dd>
+        </dl>
+      </address>
+    </div>
+  </div>
+</section>

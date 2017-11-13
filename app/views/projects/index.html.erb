@@ -1,0 +1,163 @@
+      <section class="well well4">
+        
+        <div class="container center991">
+          <h2>
+            НАШИ
+            <small>
+              РАБОТЫ
+            </small>
+          </h2>
+          <div class="row offs3">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work1.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work1.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work1.description %>
+                    </p>
+                    <a href="<%= @work1.url %>" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work2.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work2.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work2.description %>
+                    </p>
+                    <a href="<%= @work2.url %>" class="btn-link fa-angle-right"></a>
+                  </div>   
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work3.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work3.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work3.description %>
+                    </p>
+                    <a href="<%= @work3.url %>" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work4.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work4.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work4.description %>
+                    </p>
+                    <a href="<%= @work4.url %>" class="btn-link fa-angle-right"></a>
+                  </div> 
+                </div>
+              </div>              
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work5.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work5.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work5.description %>
+                    </p>
+                    <a href="<%= @work5.url %>" class="btn-link fa-angle-right"></a>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work6.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work6.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work6.description %>
+                    </p>
+                    <a href="<%= @work6.url %>" class="btn-link fa-angle-right"></a>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag @work7.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= @work7.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= @work7.description %>
+                    </p>
+                    <a href="<%= @work7.url %>" class="btn-link fa-angle-right"></a>
+                  </div> 
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div> 
+
+      </section>
+      <section>
+        <div class="container">
+          <div class="row center-block">
+              <a href="/contacts">
+              <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">
+                  СВЯЗАТЬСЯ С НАМИ
+              </button>
+              </a>
+          </div>
+        </div>
+      </section>
+      <section class="well well2 bg1" style="margin-top: 2.5em">
+        <div class="container">
+          <h2><%= @special.title.html_safe %></h2>
+          <div class="row offs1">
+            <div class="col-md-6 col-sm-12">
+              <p>
+                <%= @special.description %>
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <p>
+                <%= @special.slave %>
+                <a href="<%= @special.url %>" class="btn-link l-h1 fa-angle-right"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>

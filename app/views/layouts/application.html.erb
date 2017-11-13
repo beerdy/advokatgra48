@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="yandex-verification" content="849f1cc000a2b4df" />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <title><%= yield(:title) %></title>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+
+    <!--JS-->
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/assets/rd-smoothscroll.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="/assets/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="/assets/html5shiv.js"></script>
+    <![endif]-->
+    <script src='/assets/device.min.js'></script>
+  </head>
+  <body>
+  <div class="page">
+      <div id="panel">
+        <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner" id="advanced">
+          <span class="trigger">
+            <strong></strong>
+            <em></em>
+          </span>
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle tm_offs1" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+              <ul class="nav navbar-nav">
+                <li class="home">
+                  <a href="/" class="glyphicon glyphicon-home"></a>
+                </li>
+                <li class="divider-vertical"></li>
+                <% Article.find(12).description.each_line do |social| %>
+                  <% name,url = social.split(';') %>
+                  <li><a href="<%= url %>" ><%= name %></a></li>
+                <% end %>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+  <!--========================================================
+                            HEADER
+  =========================================================-->
+    <header>  
+      <div class="container top-sect">
+        <div class="navbar-header">
+          <h1 class="navbar-brand">
+            <a data-type='rd-navbar-brand'  href="./">адвокаты<small>ГРА 48</small></a>
+          </h1>
+          <a class="search-form_toggle" href="#"></a>
+        </div>
+
+        <div class="help-box text-right">
+          <p>Нужна помощь?</p>
+          <a href="callto:#"><%= @info.phone %></a>
+          <small><span>Часы работы:</span>  <%= @info.slave.split('|')[0] %></small>
+        </div>
+      </div>
+
+
+      <div id="stuck_container" class="stuck_container">
+        <div class="container">   
+        <nav class="navbar navbar-default navbar-static-top pull-left">            
+
+            <div class="">  
+              <ul class="nav navbar-nav sf-menu" data-type="navbar">
+                <li class="active">
+                  <a href="/">ГЛАВНАЯ</a>
+                </li>
+                <li>
+                  <a href="/about/index">О НАС</a>
+                </li>
+                <li class="dropdown">
+                  <a href="/services">УСЛУГИ</a>
+<!--              <a href="/services">УСЛУГИ<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/tarif/index">ЦЕНЫ</a>
+                    </li>
+                  </ul>
+-->
+<!--
+                  <a href="/services">УСЛУГИ<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">Dolor sit amet  </a>                      
+                    </li>
+                    <li>
+                      <a href="#">Conse ctetur </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">Latest</a>
+                          </li>
+                          <li>
+                            <a href="#">Archive</a>
+                          </li>                      
+                        </ul>
+                    </li>
+                  </ul>
+-->
+                </li>                
+                <li>
+                  <a href="/papers">СТАТЬИ<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/magazine/index">ГАЛЕРЕЯ</a>
+                    </li>
+                  </ul>
+                </li>
+		            <li>
+		              <a href="/projects/index">ДОСТИЖЕНИЯ</a>
+                </li>
+                <li>
+                  <a href="/contacts">КОНТАКТЫ</a>
+                </li>
+              </ul>                           
+            </div>
+        </nav>   
+
+             
+        </div>
+
+      </div>  
+    </header>
+
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+
+    <main>        
+      <%= yield %>
+    </main>
+
+    <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer class="top-border">
+
+    <div class="map">
+      <%= Contact.first.map.html_safe %>
+    </div>
+
+    <section class="well1">
+      <div class="container"> 
+            <p class="rights">
+              Business Company  &#169; <span id="copyright-year"></span>
+              <a href="index-5.html">Privacy Policy</a>
+              More <a rel="nofollow" href="http://otklik.pw" target="_blank">Business Website powered by "Otklik Power"</a>
+            </p>          
+      </div> 
+    </section>    
+  </footer>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->         
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/tm-scripts.js"></script>    
+  <!-- </script> -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40037575 = new Ya.Metrika({
+                    id:40037575,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    ecommerce:"dataLayer"
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/40037575" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+  </body>
+</html>

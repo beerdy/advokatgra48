@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Adwards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Slave</th>
+      <th>Image uid</th>
+      <th>Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adwards.each do |adward| %>
+      <tr>
+        <td><%= adward.title %></td>
+        <td><%= adward.description %></td>
+        <td><%= adward.slave %></td>
+        <td><%= adward.image_uid %></td>
+        <td><%= adward.url %></td>
+        <td><%= link_to 'Show', adward %></td>
+        <td><%= link_to 'Edit', edit_adward_path(adward) %></td>
+        <td><%= link_to 'Destroy', adward, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Adward', new_adward_path %>

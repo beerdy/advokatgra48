@@ -1,0 +1,1 @@
+json.array! @adwards, partial: 'adwards/adward', as: :adward
