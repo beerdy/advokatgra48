@@ -1,13 +1,19 @@
 class ProjectsController < ApplicationController
   def index
-    @work1 = Work.find(1)
-    @work2 = Work.find(2)
-    @work3 = Work.find(3)
-    @work4 = Work.find(4)
-    @work5 = Work.find(5)
-    @work6 = Work.find(6)
-    @work7 = Work.find(7)
+    works = Work.all
+    @work1 = works[0]
+    @work2 = works[1]
+    @work3 = works[2]
+    @work4 = works[3]
+    @work5 = works[4]
+    @work6 = works[5]
+    @work7 = works[6]
 
     @special = Article.find(9)
+
+    @works = []
+    works[7..-1].each do |work|
+        @works << work
+    end
   end
 end

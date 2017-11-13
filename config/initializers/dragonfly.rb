@@ -3,6 +3,8 @@ require 'dragonfly'
 # Configure
 Dragonfly.app.configure do
   plugin :imagemagick
+  
+  verify_urls false
 
   secret "6fac7abbf938be0ecaf1b43c232944874d80fe4b008d88dfc28d81cc129b0e87"
 

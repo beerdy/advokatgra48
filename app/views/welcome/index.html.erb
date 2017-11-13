@@ -2,8 +2,9 @@
       <section class="well well1 well1_ins1">
         <div class="camera_container">
           <div id="camera" class="camera_wrap">
+
             <% @slider.each.with_index do |slider,i| %>
-            <div data-src="<%= "/assets/sl#{i+1}.jpg" %>">
+            <div data-src="<%= slider.image.url%>">
               <div class="camera_caption fadeIn">
                 <div class="jumbotron jumbotron1">
                   <em>
@@ -108,6 +109,33 @@
               </div>
             </div>
           </div>
+
+<!-- -->
+          <div class="row wow fadeIn" data-wow-duration='2s'>
+          <% count = 0; @infos.each_with_index do |info,i| %>
+          <% break if i>=@max_blocks_on_index.sort-5 %>
+          <%= count>=3? (count=1;'</div><div class="row wow fadeIn" data-wow-duration="2s">'.html_safe) : (count+=1;'') %>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <img src="<%= info.image.url %>" alt="">
+                <div class="caption bg3">
+                  <h3>
+                    <%= info.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= info.description %>
+                    </p>
+                    <a href="<%= info.url %>" class="btn-link fa-angle-right"></a>
+                  </div>  
+                </div>
+              </div>              
+            </div>
+          <%end%>
+          </div>
+<!-- -->
+
+
         </div>
       </section>
       <section class="well well2 wow fadeIn  bg1" data-wow-duration='3s'>

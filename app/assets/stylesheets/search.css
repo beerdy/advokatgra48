@@ -111,7 +111,7 @@
   min-width: 13px;
 }
 .search-form_toggle:before {
-  content: '\f002';
+  /* content: '\f002'; */
 }
 .search-form_toggle:focus {
   color: #222533;

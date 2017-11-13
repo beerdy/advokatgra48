@@ -129,6 +129,31 @@
               </div> 
             </div>
           </div>
+<!-- -->
+          <div class="row">
+            <% count = 0; @works.each_with_index do |work,i| %>
+            <% break if i>=@max_blocks_on_project.sort-7 %>
+            <%= count>=3? (count=1;'</div><div class="row">'.html_safe) : (count+=1;'') %>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="thumbnail thumb-shadow">
+                <%= image_tag work.image.url %>
+                <div class="caption bg3 capt_hover1">
+                  <h3>
+                    <%= work.title %>
+                  </h3>
+                  <div class="wrap">
+                    <p>
+                      <%= work.description %>
+                    </p>
+                    <a href="<%= work.url %>" class="btn-link fa-angle-right"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <%end%>
+          </div>
+<!-- -->
+
         </div> 
 
       </section>

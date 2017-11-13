@@ -4,10 +4,17 @@ class WelcomeController < ApplicationController
     @slider = Slider.all
     @hello  = Article.find(7)
     @slogan = Article.find(8)
-    @info1  = Info.find(1)
-    @info2  = Info.find(2)
-    @info3  = Info.find(3)
-    @info4  = Info.find(4)
-    @info5  = Info.find(5)
+    
+    infos = Info.all
+    @info1  = infos[0]
+    @info2  = infos[1]
+    @info3  = infos[2]
+    @info4  = infos[3]
+    @info5  = infos[4]
+
+    @infos = []
+    infos[5..-1].each do |info|
+        @infos << info
+    end
   end
 end

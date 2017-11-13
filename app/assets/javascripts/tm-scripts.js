@@ -422,20 +422,7 @@ include('/assets/jquery.cookie.js');
 	$('head').append('<link rel="stylesheet" href="/assets/tm_docs.css" type="text/css" media="screen"><link href="/assets/tm_panel.css" rel="stylesheet">');
 	//$('body').prepend(col);
 
-$(window).scroll(
-	function () {
-		if (
-			$(this).scrollTop() > 0) {
-			$("#advanced").css({
-				position: 'fixed'
-			});
-		} else {
-			$("#advanced").css({
-				position: 'relative'
-			});
-		}
-	}
-);
+
 $(function () {
 	var
 		strCookies1 = $.cookie('panel1'),
