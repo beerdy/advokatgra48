@@ -4,7 +4,7 @@
           <div id="camera" class="camera_wrap">
 
             <% @slider.each.with_index do |slider,i| %>
-            <div data-src="<%= slider.image.url%>">
+            <div data-src="<%= slider.image.url if slider.image_stored? %>">
               <div class="camera_caption fadeIn">
                 <div class="jumbotron jumbotron1">
                   <em>
