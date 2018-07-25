@@ -20,7 +20,7 @@ set :deploy_to, '/var/www/rails/advokatgra48.ru/cap'
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
@@ -30,7 +30,9 @@ set :deploy_to, '/var/www/rails/advokatgra48.ru/cap'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-
+set :default_env, {
+  path: "$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+}
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 
