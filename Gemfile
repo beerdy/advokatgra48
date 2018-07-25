@@ -29,7 +29,7 @@ gem 'dragonfly', '~> 1.0.12'
 gem 'devise'
 gem 'puma'
 gem 'yaml_db'
-gem 'mysql2'
+gem 'mysql2', '0.3.20'
 
 gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 
