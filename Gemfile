@@ -30,6 +30,7 @@ gem 'puma'
 gem 'yaml_db'
 gem 'mysql2'
 
+gem 'capistrano3-puma', github: "seuros/capistrano-puma"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
