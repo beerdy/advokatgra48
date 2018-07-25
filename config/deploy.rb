@@ -30,11 +30,10 @@ set :deploy_to, '/var/www/rails/advokatgra48.ru/cap'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :default_env, {
-  path: "$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-}
-
+set :default_env, { path: "$(ruby -e 'print Gem.user_dir')/bin:$PATH" }
 set :bundle_gemfile, -> { release_path.join('Gemfile') } 
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 
