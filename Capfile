@@ -34,7 +34,7 @@ require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 require 'capistrano/puma'
-require 'capistrano/secrets_yml'
+
 install_plugin Capistrano::Puma  # Default puma tasks
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
