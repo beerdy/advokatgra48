@@ -1528,8 +1528,7 @@ th {
   body {
     padding-top: 56px;
   }
-  .rd-mobilemenu,
-  .rd-mobilepanel {
+  .rd-mobilemenu, .rd-mobilepanel {
     display: block;
   }
 }
@@ -1628,6 +1627,7 @@ th {
     border: none!important;
     box-shadow: none!important;
   }
+
 }
 @media (max-width: 767px) {
   #panel {
@@ -8087,6 +8087,19 @@ button.close {
   .hidden-xs {
     display: none !important;
   }
+  .v-header-mobile {
+    display: block !important;
+  }
+  .v-header-desktop {
+    display: none !important;
+  }
+
+  .navbar-header .v-header-desktop {
+    display: block !important;
+  }
+  .navbar-header .v-header-mobile {
+    display: none !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm {
@@ -8150,3 +8163,4 @@ button.close {
     display: none !important;
   }
 }
+

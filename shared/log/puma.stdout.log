@@ -38417,3 +38417,2776 @@ Started GET "/assets/favicon.ico" for ::1 at 2017-11-13 17:19:06 +0300
 [8100] === puma shutdown: 2017-11-13 17:20:38 +0300 ===
 [8100] - Goodbye!
 Exiting
+=== puma startup: 2018-07-28 13:59:12 +0300 ===
+[30904] * Starting control server on unix:///tmp/puma-status-1532775552318-30904
+[30904] - Worker 0 (pid: 30911) booted, phase: 0
+
+
+Started GET "/products.json" for ::1 at 2018-07-28 13:59:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/products.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  dragonfly (1.0.12) lib/dragonfly/cookie_monster.rb:9:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+  puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+  puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+  puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (30.2ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (65.4ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (408.6ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (2029.5ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.7ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2107.8ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 13:59:23 +0300
+  [1m[35mContact Load (2.5ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (2.0ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (1.9ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (2.1ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.9ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (1.9ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (73.0ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 48377ms (Views: 48283.1ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/" for ::1 at 2018-07-28 14:00:12 +0300
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.6ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.7ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (16.1ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.8ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 671ms (Views: 662.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/animate.self-181acea227d1cda0b352f27097ad006c08519725604f71d90fc55757c6a6545c.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/media.self-54253678871bd22b454f29f924d51417add9aacc815ff9a2ea69c815dc06128c.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/alerts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/background-variant.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/border-radius.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/buttons.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/center-block.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/clearfix.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/gradients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/grid-framework.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/grid.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/hide-text.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/image.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/labels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/list-group.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/nav-divider.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/nav-vertical-align.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/opacity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/pagination.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/panels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/progress-bar.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/reset-filter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/resize.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/responsive-visibility.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/size.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/tab-focus.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/table-row.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:13 +0300
+
+
+Started GET "/assets/mixins/text-emphasis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/mixins/text-overflow.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/mixins/vendor-prefixes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/normalize.self-043548869db5850225d364a1d041e9472ec160989ee8acd4db5c430da93b9b7e.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/owl-carousel.self-6ab05e75206c64e9db53ce084721f3b2a59f9316c5f5ef29c6c31f8883580f9d.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/print.self-c7d5c4502d9da5612a3ccc06b93a1513289699ff9dc0b71a3f7da0762cdfa4b7.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/responsive-embed.self-2a4ad23272693d9659bad39902115d7ddf09b997db4cfab134e5ee6db414bcb5.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/search.self-6c552253d438c4fe6703da3cb385dbf9a3804e70b0e0d5a44af80b10bab9aee2.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/slider-pro.min.self-bd40e06de849011f47494ef8a597c617ba169d58971de00137a09466134e029c.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/sliderpro.exmpl.self-ede532243d3a7574a8b91345966497f0d40829c228f8c397bfb8e652ee9c16be.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/style.self-99e2f9dc780b92f4631dac23b93ff073f9dff4eb8ec11cd649819a25ac115832.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/subscribe-form.self-61dd5e8ea350b14f3a368c7be7ac1dbd9273b3f746ab51920ee3c08f33361e72.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/thumbnails.self-5d45483b4382a884b8c658767a87d0fd1a108bd115759ea6ba17b6b26fa45737.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/tm_docs.self-54e985f587bb219861fefa5262808cf019a969c2e2f3b5a83604dbfbc5bc0891.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/tm_panel.self-5b5bf2eb00fd106a4be0d63bd82ec932a4f9b25304cc821073bef33c316da5de.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/variables.self-8b7bf0064b8f67ee939a171fc42958d7f2059599ec708472b5d71c1b7fca865c.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/z-style.self-edd323c3f21c600d74832f14eea40619c93fc102b530dc73987e452292cd4bce.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/jquery.fancybox.self-1f6e80ae846a28c4e23e3ffa0b21e59438bd0cbf67ee0da75abb87187e756acc.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/TMForm.self-a88d1bc3b823e791e7a06b36a0fcacbaa35f08f756996522be918ceb56fb8a91.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/TMSearch.self-6fd8ea701a639019c4398e6ecab670ea80950695c357ab335824563c7b4e5f9f.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/camera.self-0565d79e0bcf72951f348f1e959feec8abb675484f351ecf6ce9faf9b21ae00b.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for ::1 at 2018-07-28 14:00:14 +0300
+
+
+Started GET "/assets/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/device.min.self-adc44855f7dc48558e7b593c165c290d3e85818391ec474d182a5b4ecde0d1d8.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/html5shiv.self-8595d9d9f7305aba0f5da6ebfcfff21fba920b79d9a0086ade600097d56aa4a7.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery-migrate-1.2.1.min.self-4b9a092934f8df934403368a55b57a2c6c331f24d2b1f40b452bd2e95356aa3e.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.cookie.self-5cb359dd1842ee91380181121ad7e747e016adc14eff7ed2b67615ada79fd632.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.equalheights.self-b24f106cd3cc6fc4f840f15f2901ff62f5a5a23928820a95d07a738dc058f8d2.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.fancybox-buttons.self-33642167959619dbf7a787a72836fa409114cb21cb6543d00dc46d4633e19d83.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.fancybox-media.self-e7554203b38774993cb7d350de0cb39be225a243a64c9831c534fef0c5f00e3c.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.self-252e65f6e042c947fb6143aa7b1bb76a155daf94bccf63c6d74f06979c2764ee.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.mobilemenu.self-f300b178b850dd461450af9b74c5befd8798c78623dba447d470f96964896ce9.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.mousewheel.min.self-7708858a15c1a92e20a630f682918541ce3dce629071ac084a23ab151665ec1a.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.rd-google-map.self-b5b0850228f2600c9f939f29ae95dac89539ac7f00c2de72280d13a4f6352ddb.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.self-1ccf7b80cfb01f9b1428f5e3ecd53f19cf363c378e0a5d25b1bd50c0621c71b8.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.self-667210b0d5b01710fbf80af1bfed3aeb6cda7f3d406e118a513265b0cc676621.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.sliderPro.min.self-0cdcb375eef8ad30ad00dc79b64cc7525e66ee6457d409a6070ffd9f2be76036.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.touchSwipe.min.self-d6ab94907838f43575d8042a544cebeefe0b5577494fa3ac6cb21d1f158eeae9.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/jquery.ui.totop.self-a0ad537e9d52911361885f5cbb18150c1bd621e06b3f91089192c76187e082f9.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/owl.carousel.min.self-e57e7a15414bfda970aa526ebc85fbb3f2389a3db9b7d85a24bd7e3b62d70171.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/sForm.self-93505f8b6887ff59db9c9ef7466dce296b6ff873c3fa6a3779a250a754f1e8d3.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/superfish.self-c9e62dc523ce8a7fdcf9af8eb52688cb0ba8d30b42b178fbc103bdcf44fb757d.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/tm-scripts.self-e8d84f5586cfea0716167d3ff9aae66667ce2b1028dd11cf390fdcc896eeaef6.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/tmstickup.self-ca6b565a58bd4e79a5373ef570bf5dfb43887dd66b88b0a61d8ec10207834767.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/wow.self-4fc049501415815d5fa555bc735c359c381441d2107851b32b30ae5ba192a892.js?body=1" for ::1 at 2018-07-28 14:00:15 +0300
+
+
+Started GET "/assets/application.self-8904251b0783e64884dee33114e175e7370823e1b2a616216a3dfe49d548fc62.js?body=1" for ::1 at 2018-07-28 14:00:16 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:00:16 +0300
+
+
+Started GET "/assets/bootstrap.self-5f9b3c2b3d6a31521cad88778d892e218d81886f0cb85e01343dd1a6cc6662db.css?body=1" for ::1 at 2018-07-28 14:00:16 +0300
+
+
+Started GET "/assets/camera.self-f8963c55ab45e9efe531b21c5461dfe19e3ce2db22a322c1ea9f717b9e0935f2.css?body=1" for ::1 at 2018-07-28 14:00:16 +0300
+
+
+Started GET "/assets/contact-form.self-0a67d252c8b9c0044e0a89c60f8526e78782df849f0eef5bb4312659529a7c1b.css?body=1" for ::1 at 2018-07-28 14:00:16 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:00:16 +0300
+
+
+Started GET "/assets/jquery.fancybox.self-74f6969b97a6847da6e5b52a5e60eeb01f10a1e03b207b69c7af9bf485ef5c3f.css?body=1" for ::1 at 2018-07-28 14:00:17 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:00:17 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:00:17 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDYvejZzNW54bnRwX18uanBnIl1d" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDYvejZzNW54bnRwX18uanBnIl1d 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMDkvMjUvMjl3dTJ5YXBncV9fMi5qcGciXV0" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMDkvMjUvMjl3dTJ5YXBncV9fMi5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTAvMDIvMWViaGdxOHRydV9fanBnLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTAvMDIvMWViaGdxOHRydV9fanBnLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMTAvMnJ5NjE3ZzhmdF9fMy5qcGciXV0" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMTAvMnJ5NjE3ZzhmdF9fMy5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDQvNDRlbHAzbHc5a19fLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDQvNDRlbHAzbHc5a19fLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMTEvMzl1YTJ6ZjdxNF9fMl8xLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMTEvMzl1YTJ6ZjdxNF9fMl8xLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMTIvN2l0eGV4dTA2N19fM19fLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:17 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMTIvN2l0eGV4dTA2N19fM19fLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTEvMTIvNjcwMmpjdm5hX0lNR185OTY1LkpQRyJdXQ" for ::1 at 2018-07-28 14:00:18 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTEvMTIvNjcwMmpjdm5hX0lNR185OTY1LkpQRyJdXQ 200
+
+
+Started GET "/assets/mixins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2018-07-28 14:00:19 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:00:19 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:00:21 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:00:22 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:00:22 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvN2FvZWNwM3V2eV9kaXBfbW9sb3ppbmExMS5qcGciXV0" for ::1 at 2018-07-28 14:00:22 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvN2FvZWNwM3V2eV9kaXBfbW9sb3ppbmExMS5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNzNuczhxeHA3Yl9fMDAxLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:22 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNzNuczhxeHA3Yl9fMDAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvN20zNGwyN3NjOV9kaXBfbW9sb3ppbmExMy5qcGciXV0" for ::1 at 2018-07-28 14:00:22 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvN20zNGwyN3NjOV9kaXBfbW9sb3ppbmExMy5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNDRyOHlodmpzal9fMDAxLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNDRyOHlodmpzal9fMDAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNXVia2R3anpjdl9kaXBfbW9sb3ppbmE5LmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNXVia2R3anpjdl9kaXBfbW9sb3ppbmE5LmpwZyJdXQ 200
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:00:23 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:00:23 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvM3ExaTd1bDcyMV8yLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvM3ExaTd1bDcyMV8yLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvOXNuOGZkdGpxOV80LmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvOXNuOGZkdGpxOV80LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvNmZ4aHByMG1oMl8zLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvNmZ4aHByMG1oMl8zLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvNmRmd3g3azQ1aV8xLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvNmRmd3g3azQ1aV8xLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvMTR2bXhydXo2M181LmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvMTR2bXhydXo2M181LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvOHJzaXk1M3BkN182LmpwZyJdXQ" for ::1 at 2018-07-28 14:00:23 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvOHJzaXk1M3BkN182LmpwZyJdXQ 200
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:00:23 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:00:23 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:00:23 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvZjhjNnI0Z28yX2RpcF9tb2xvemluYTEyLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:24 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvZjhjNnI0Z28yX2RpcF9tb2xvemluYTEyLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvMzI5OGY0YXE3OV9kaXBfbW9sb3ppbmExMC5qcGciXV0" for ::1 at 2018-07-28 14:00:24 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvMzI5OGY0YXE3OV9kaXBfbW9sb3ppbmExMC5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNXR6cTZ0enYzeF9kaXBfbW9sb3ppbmE4LmpwZyJdXQ" for ::1 at 2018-07-28 14:00:24 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNXR6cTZ0enYzeF9kaXBfbW9sb3ppbmE4LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvOHI0MGZ2cDEyNV9tb2xvel9kaXAxLmpwZyJdXQ" for ::1 at 2018-07-28 14:00:24 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvOHI0MGZ2cDEyNV9tb2xvel9kaXAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDMvNXF6dWxsd255Y19mc2wuanBnIl1d" for ::1 at 2018-07-28 14:00:25 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDMvNXF6dWxsd255Y19mc2wuanBnIl1d 200
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:00:25 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778603470" for ::1 at 2018-07-28 14:00:25 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778603470 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778606732" for ::1 at 2018-07-28 14:00:28 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778606732 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:01:15 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:04:37 +0300
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.6ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (1.7ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (1.8ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (41.6ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 700ms (Views: 677.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:04:38 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:04:38 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:04:38 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:04:38 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:04:39 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:04:40 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:04:40 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:04:40 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:04:40 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:04:40 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:04:41 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:04:41 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:04:41 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778859535" for ::1 at 2018-07-28 14:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778859535 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778860802" for ::1 at 2018-07-28 14:04:42 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532778860802 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:04:45 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:04:45 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:24:03 +0300
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.3ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.0ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.6ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (16.1ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 698ms (Views: 692.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/z-style.self-69ff11253c176ee64abe1237fa4b2ce160c6aee1899915f90ab3a837736befbe.css?body=1" for ::1 at 2018-07-28 14:24:04 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:24:04 +0300
+
+
+Started GET "/assets/application.self-8904251b0783e64884dee33114e175e7370823e1b2a616216a3dfe49d548fc62.js?body=1" for ::1 at 2018-07-28 14:24:04 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDYvejZzNW54bnRwX18uanBnIl1d" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDYvejZzNW54bnRwX18uanBnIl1d 200
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:24:05 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:24:05 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTAvMDIvMWViaGdxOHRydV9fanBnLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTAvMDIvMWViaGdxOHRydV9fanBnLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMTAvMnJ5NjE3ZzhmdF9fMy5qcGciXV0" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMTAvMnJ5NjE3ZzhmdF9fMy5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDQvNDRlbHAzbHc5a19fLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDQvNDRlbHAzbHc5a19fLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMTEvMzl1YTJ6ZjdxNF9fMl8xLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMTEvMzl1YTJ6ZjdxNF9fMl8xLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMTIvN2l0eGV4dTA2N19fM19fLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMTIvN2l0eGV4dTA2N19fM19fLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTEvMTIvNjcwMmpjdm5hX0lNR185OTY1LkpQRyJdXQ" for ::1 at 2018-07-28 14:24:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTEvMTIvNjcwMmpjdm5hX0lNR185OTY1LkpQRyJdXQ 200
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMDkvMjUvMjl3dTJ5YXBncV9fMi5qcGciXV0" for ::1 at 2018-07-28 14:24:06 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMDkvMjUvMjl3dTJ5YXBncV9fMi5qcGciXV0 200
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:24:06 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvN2FvZWNwM3V2eV9kaXBfbW9sb3ppbmExMS5qcGciXV0" for ::1 at 2018-07-28 14:24:06 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvN2FvZWNwM3V2eV9kaXBfbW9sb3ppbmExMS5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNXR6cTZ0enYzeF9kaXBfbW9sb3ppbmE4LmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNXR6cTZ0enYzeF9kaXBfbW9sb3ppbmE4LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvMzI5OGY0YXE3OV9kaXBfbW9sb3ppbmExMC5qcGciXV0" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvMzI5OGY0YXE3OV9kaXBfbW9sb3ppbmExMC5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvZjhjNnI0Z28yX2RpcF9tb2xvemluYTEyLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvZjhjNnI0Z28yX2RpcF9tb2xvemluYTEyLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvOHI0MGZ2cDEyNV9tb2xvel9kaXAxLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvOHI0MGZ2cDEyNV9tb2xvel9kaXAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvN20zNGwyN3NjOV9kaXBfbW9sb3ppbmExMy5qcGciXV0" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvN20zNGwyN3NjOV9kaXBfbW9sb3ppbmExMy5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNDRyOHlodmpzal9fMDAxLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNDRyOHlodmpzal9fMDAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNXVia2R3anpjdl9kaXBfbW9sb3ppbmE5LmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNXVia2R3anpjdl9kaXBfbW9sb3ppbmE5LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvM3ExaTd1bDcyMV8yLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvM3ExaTd1bDcyMV8yLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvOXNuOGZkdGpxOV80LmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvOXNuOGZkdGpxOV80LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvNmZ4aHByMG1oMl8zLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvNmZ4aHByMG1oMl8zLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvNmRmd3g3azQ1aV8xLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvNmRmd3g3azQ1aV8xLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvMTR2bXhydXo2M181LmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvMTR2bXhydXo2M181LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvOHJzaXk1M3BkN182LmpwZyJdXQ" for ::1 at 2018-07-28 14:24:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvOHJzaXk1M3BkN182LmpwZyJdXQ 200
+
+
+Started GET "/" for ::1 at 2018-07-28 14:24:08 +0300
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (1.6ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.1ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.7ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (32.6ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 765ms (Views: 734.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:24:09 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:24:09 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNzNuczhxeHA3Yl9fMDAxLmpwZyJdXQ" for ::1 at 2018-07-28 14:24:10 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNzNuczhxeHA3Yl9fMDAxLmpwZyJdXQ 200
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:24:10 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:24:11 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:24:12 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:24:12 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:24:12 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:24:12 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDMvNXF6dWxsd255Y19mc2wuanBnIl1d" for ::1 at 2018-07-28 14:24:12 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDMvNXF6dWxsd255Y19mc2wuanBnIl1d 200
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:24:13 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780031186" for ::1 at 2018-07-28 14:24:13 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780031186 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780032014" for ::1 at 2018-07-28 14:24:13 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780032014 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:24:18 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:24:22 +0300
+  [1m[36mContact Load (1.5ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.8ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (1.7ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.5ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (1.3ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (44.9ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 1189ms (Views: 1177.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/z-style.self-f3e561140564b230cb66918fadb17e4ab99427ff86a21b6173cf7adf5ad2c3c9.css?body=1" for ::1 at 2018-07-28 14:24:24 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:24:24 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:24:24 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:24:24 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:24:25 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:24:26 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:24:26 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:24:26 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:24:26 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:24:26 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:24:27 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:24:27 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:24:27 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780045818" for ::1 at 2018-07-28 14:24:27 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780045818 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780046677" for ::1 at 2018-07-28 14:24:28 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780046677 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnZpNHliYXU1dl9fMTAwXy5qcGciXV0/%D0%B3%D1%80%D0%B0%D0%BD%D1%82%D0%B0%20100%20%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780048385" for ::1 at 2018-07-28 14:24:30 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnZpNHliYXU1dl9fMTAwXy5qcGciXV0/%D0%B3%D1%80%D0%B0%D0%BD%D1%82%D0%B0%20100%20%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780048385 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:24:35 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:28:29 +0300
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.8ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (1.8ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (18.8ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 1050ms (Views: 1036.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/bootstrap.self-69436eb5999fa406387015372f77363c8537b9b0b396ebc05f918a9ecd057c62.css?body=1" for ::1 at 2018-07-28 14:28:30 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:28:30 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:28:30 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:28:30 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:28:31 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:28:32 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:28:32 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:28:32 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:28:32 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:28:32 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:28:33 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:28:33 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:28:33 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:28:33 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:28:33 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:28:34 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780292500" for ::1 at 2018-07-28 14:28:34 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780292500 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780293537" for ::1 at 2018-07-28 14:28:35 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780293537 200
+
+
+Started GET "/" for ::1 at 2018-07-28 14:28:40 +0300
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.5ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (3.3ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (53.0ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 596ms (Views: 585.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:28:41 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:28:41 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:28:41 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:28:41 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:28:41 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:28:41 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:28:42 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:28:43 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:28:43 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:28:43 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:28:43 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:28:43 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:28:44 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780302129" for ::1 at 2018-07-28 14:28:44 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780302129 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780302863" for ::1 at 2018-07-28 14:28:44 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780302863 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:28:48 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:29:37 +0300
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.5ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.8ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.5ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (47.7ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 920ms (Views: 910.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/z-style.self-56507005e88aca71dfbae2aba09324cc05eca6b47c56b5913c729d4ee5eb3038.css?body=1" for ::1 at 2018-07-28 14:29:38 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:29:38 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:29:38 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:29:38 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:29:39 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:29:40 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:29:40 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:29:40 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:29:40 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:29:40 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:29:41 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:29:41 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:29:41 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:29:41 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:29:41 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780359744" for ::1 at 2018-07-28 14:29:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780359744 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780360934" for ::1 at 2018-07-28 14:29:42 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780360934 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:29:48 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:30:38 +0300
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.4ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (21.5ms)
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 857ms (Views: 849.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap.self-2f04e0236ae6e9e41f44c8c277c6820223a581e34ad0e289bd6d0d8d7f6417e8.css?body=1" for ::1 at 2018-07-28 14:30:39 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:30:40 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:30:41 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:30:41 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:30:41 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:30:41 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:30:42 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:30:42 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:30:42 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:30:42 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:30:42 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:30:42 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780420922" for ::1 at 2018-07-28 14:30:42 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780420922 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780422265" for ::1 at 2018-07-28 14:30:44 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780422265 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:30:46 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:30:57 +0300
+  [1m[35mContact Load (0.4ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (1.3ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (1.6ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (39.7ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 1461ms (Views: 1449.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:31:01 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:31:02 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:31:02 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:31:02 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:31:03 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:31:04 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:31:04 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:31:04 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:31:04 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:31:04 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:31:04 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:31:05 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:31:05 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780443559" for ::1 at 2018-07-28 14:31:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780443559 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780444615" for ::1 at 2018-07-28 14:31:06 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780444615 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:31:10 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:31:49 +0300
+  [1m[36mContact Load (0.8ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (1.0ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (37.9ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 786ms (Views: 778.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/bootstrap.self-4d83dbe54c081dead28faa2e92caaab9fbe66c38e23b0d04436d00dfc8c7c003.css?body=1" for ::1 at 2018-07-28 14:31:50 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:31:50 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:31:50 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:31:51 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:31:52 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:31:52 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:31:52 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:31:52 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:31:52 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:31:53 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:31:53 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:31:53 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:31:53 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:31:53 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780491799" for ::1 at 2018-07-28 14:31:53 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780491799 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780493369" for ::1 at 2018-07-28 14:31:55 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780493369 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:31:57 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:32:10 +0300
+  [1m[35mContact Load (0.5ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (1.1ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (18.7ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.6ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 712ms (Views: 704.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap.self-cfca1285326df3e1f188efafe078c7a95d78742addb598a1b4e62693bbb9906e.css?body=1" for ::1 at 2018-07-28 14:32:11 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:32:11 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:32:11 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:32:11 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:32:11 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:32:11 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:32:12 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:32:13 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780512109" for ::1 at 2018-07-28 14:32:14 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780512109 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780513345" for ::1 at 2018-07-28 14:32:15 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780513345 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:32:18 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:32:50 +0300
+  [1m[36mContact Load (0.9ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.9ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.4ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.8ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (15.3ms)
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 616ms (Views: 609.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/bootstrap.self-8c85e58a1881695a981d17c420323259af0cc6e8c95e41f290d2c5f2a1bec5f9.css?body=1" for ::1 at 2018-07-28 14:32:51 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:32:51 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:32:51 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:32:51 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:32:51 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:32:52 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:32:53 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:32:53 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:32:53 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:32:53 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:32:53 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:32:54 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:32:54 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780552399" for ::1 at 2018-07-28 14:32:54 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780552399 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780553712" for ::1 at 2018-07-28 14:32:55 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780553712 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:32:59 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:33:06 +0300
+  [1m[35mContact Load (1.2ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.4ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.5ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (1.2ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (31.6ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 1076ms (Views: 1065.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/bootstrap.self-cb815555080f8e8875e296fea70bb355ece0f7d30b6bc9e8466fd2428271d7b4.css?body=1" for ::1 at 2018-07-28 14:33:07 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:33:07 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:33:08 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:33:09 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:33:09 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:33:09 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:33:09 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:33:09 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:33:09 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:33:10 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:33:10 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:33:10 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:33:10 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:33:10 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:33:10 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780568949" for ::1 at 2018-07-28 14:33:10 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780568949 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780570012" for ::1 at 2018-07-28 14:33:11 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780570012 200
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2018-07-28 14:33:14 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:33:21 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:33:21 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:33:21 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:34:46 +0300
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.5ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.6ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (1.1ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.6ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (37.0ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 502ms (Views: 492.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:34:47 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:34:47 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:34:48 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:34:48 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:34:48 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:34:49 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:34:49 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:34:49 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:34:49 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:34:49 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:34:50 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:34:50 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:34:50 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:34:50 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:34:51 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:34:51 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:34:51 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:34:51 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:34:51 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:34:52 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780670200" for ::1 at 2018-07-28 14:34:52 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780670200 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780672031" for ::1 at 2018-07-28 14:34:53 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780672031 200
+
+
+Started GET "/" for ::1 at 2018-07-28 14:35:55 +0300
+  [1m[35mContact Load (0.5ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.3ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.5ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (2.6ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (32.5ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 736ms (Views: 726.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:35:56 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:35:56 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:35:56 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:35:57 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:35:57 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:35:58 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:35:59 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:35:59 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:35:59 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:35:59 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:35:59 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:36:00 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:36:00 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780738649" for ::1 at 2018-07-28 14:36:00 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780738649 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780740550" for ::1 at 2018-07-28 14:36:02 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780740550 200
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:36:12 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:37:35 +0300
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.3ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.8ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (1.0ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (8.6ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (59.6ms)
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 823ms (Views: 806.2ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/assets/bootstrap.self-6d849418b8e90329be71749bada13001b3a3f6d3f6dadb1998ffe26a2ad8f425.css?body=1" for ::1 at 2018-07-28 14:37:36 +0300
+
+
+Started GET "/assets/z-style.self-e2c5a6b9625f89f31c61cef3ed278b81db6ce211a37a580244b59b9fabc7a25d.css?body=1" for ::1 at 2018-07-28 14:37:36 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:37:36 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:37:36 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:37:36 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:37:37 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:37:37 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:37:38 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:37:39 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:37:39 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:37:39 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:37:39 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:37:39 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:37:40 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:37:40 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780838864" for ::1 at 2018-07-28 14:37:40 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780838864 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780840971" for ::1 at 2018-07-28 14:37:42 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780840971 200
+
+
+Started GET "/" for ::1 at 2018-07-28 14:39:59 +0300
+  [1m[35mContact Load (0.5ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.5ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.8ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.6ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.6ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (57.0ms)
+  [1m[36mArticle Load (7.7ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 1035ms (Views: 1019.5ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/bootstrap.self-4f6713f41a04713a9686791fc019ed379d0e3ef0b2c1a7fae606fcc5d7497e9d.css?body=1" for ::1 at 2018-07-28 14:40:00 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:40:00 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:40:00 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:40:01 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:40:01 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:40:01 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:40:02 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:40:02 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:40:02 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:40:02 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:40:03 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:40:03 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:40:03 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:40:03 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:40:03 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:40:04 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:40:04 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:40:04 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:40:04 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:40:05 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:40:05 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780983575" for ::1 at 2018-07-28 14:40:05 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780983575 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780985682" for ::1 at 2018-07-28 14:40:07 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780985682 200
+
+
+Started GET "/" for ::1 at 2018-07-28 14:40:12 +0300
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (2.1ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (0.5ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.5ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.9ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (48.2ms)
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 831ms (Views: 802.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:40:13 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:40:13 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:40:14 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:40:14 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:40:14 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:40:15 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:40:15 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:40:15 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:40:15 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:40:15 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:40:16 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:40:16 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:40:16 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:40:16 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:40:16 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:40:17 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:40:17 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:40:17 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:40:17 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:40:17 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:40:18 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:40:18 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780996411" for ::1 at 2018-07-28 14:40:18 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780996411 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780998303" for ::1 at 2018-07-28 14:40:20 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532780998303 200
+
+
+Started GET "/" for ::1 at 2018-07-28 14:40:57 +0300
+  [1m[35mContact Load (0.6ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.5ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.6ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (7.4ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.9ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (44.3ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 819ms (Views: 803.4ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/assets/bootstrap.self-879fe26c59b08f795f0a6e826c952eb8cf97bab54679a122fe617278d9d2257f.css?body=1" for ::1 at 2018-07-28 14:40:58 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:40:58 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:40:58 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:40:58 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:40:59 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:40:59 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:41:00 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:41:01 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:41:01 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:41:01 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:41:01 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:41:01 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:41:01 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:41:02 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:41:02 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:41:02 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781040823" for ::1 at 2018-07-28 14:41:02 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781040823 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781042685" for ::1 at 2018-07-28 14:41:04 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781042685 200
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:41:06 +0300
+
+
+Started GET "/" for ::1 at 2018-07-28 14:53:47 +0300
+  [1m[36mContact Load (0.9ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents"
+Processing by WelcomeController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mInfo Load (1.2ms)[0m  [1mSELECT "infos".* FROM "infos"[0m
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders"
+  [1m[36mClient Load (0.5ms)[0m  [1mSELECT "clients".* FROM "clients"[0m
+  Rendered welcome/index.html.erb within layouts/application (42.7ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1[0m
+Completed 200 OK in 739ms (Views: 732.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-28 14:53:48 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-28 14:53:49 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-28 14:53:50 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-28 14:53:50 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-28 14:53:50 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-28 14:53:50 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-28 14:53:50 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-28 14:53:51 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-28 14:53:51 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-28 14:53:51 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-28 14:53:51 +0300
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-28 14:53:52 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781810547" for ::1 at 2018-07-28 14:53:52 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781810547 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781811715" for ::1 at 2018-07-28 14:53:53 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532781811715 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532931163727" for ::1 at 2018-07-30 08:23:06 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532931163727 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532931179350" for ::1 at 2018-07-30 08:23:21 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1532931179350 200
+
+
+Started GET "/products.json" for ::1 at 2018-07-30 10:19:39 +0300
+
+ActionController::RoutingError (No route matches [GET] "/products.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  dragonfly (1.0.12) lib/dragonfly/cookie_monster.rb:9:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+  puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+  puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+  puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+  puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.8ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (33.3ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (257.3ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1235.0ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/beerdy/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1295.7ms)
+[30904] - Gracefully shutting down workers...
+[30904] === puma shutdown: 2018-07-30 11:57:37 +0300 ===
+[30904] - Goodbye!
+Exiting
+=== puma startup: 2018-07-31 19:04:25 +0300 ===
+[21531] * Starting control server on unix:///tmp/puma-status-1533053065000-21531
+[21531] - Worker 0 (pid: 21538) booted, phase: 0
+
+
+Started GET "/" for ::1 at 2018-07-31 19:04:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mContact Load (0.6ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mArticle Load (0.8ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mInfo Load (0.3ms)[0m  SELECT "infos".* FROM "infos"
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mClient Load (0.5ms)[0m  SELECT "clients".* FROM "clients"
+  Rendered welcome/index.html.erb within layouts/application (54.9ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  ORDER BY "contacts"."id" ASC LIMIT 1
+Completed 200 OK in 1333ms (Views: 1267.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/animate.self-181acea227d1cda0b352f27097ad006c08519725604f71d90fc55757c6a6545c.css?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/normalize.self-043548869db5850225d364a1d041e9472ec160989ee8acd4db5c430da93b9b7e.css?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/thumbnails.self-5d45483b4382a884b8c658767a87d0fd1a108bd115759ea6ba17b6b26fa45737.css?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.fancybox.self-1f6e80ae846a28c4e23e3ffa0b21e59438bd0cbf67ee0da75abb87187e756acc.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/TMSearch.self-6fd8ea701a639019c4398e6ecab670ea80950695c357ab335824563c7b4e5f9f.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/bootstrap.min.self-d66e555f160df017adf1ca16a36cd609a36d49c51637e365c5b8847d0065fa40.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/camera.self-0565d79e0bcf72951f348f1e959feec8abb675484f351ecf6ce9faf9b21ae00b.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/device.min.self-adc44855f7dc48558e7b593c165c290d3e85818391ec474d182a5b4ecde0d1d8.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/html5shiv.self-8595d9d9f7305aba0f5da6ebfcfff21fba920b79d9a0086ade600097d56aa4a7.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery-migrate-1.2.1.min.self-4b9a092934f8df934403368a55b57a2c6c331f24d2b1f40b452bd2e95356aa3e.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.cookie.self-5cb359dd1842ee91380181121ad7e747e016adc14eff7ed2b67615ada79fd632.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.easing.1.3.self-c85028b4485f3b7e91508aa9891cfeb41a8884efd87672715de3fa1ae2173948.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.equalheights.self-b24f106cd3cc6fc4f840f15f2901ff62f5a5a23928820a95d07a738dc058f8d2.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.fancybox-buttons.self-33642167959619dbf7a787a72836fa409114cb21cb6543d00dc46d4633e19d83.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.fancybox-media.self-e7554203b38774993cb7d350de0cb39be225a243a64c9831c534fef0c5f00e3c.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.self-252e65f6e042c947fb6143aa7b1bb76a155daf94bccf63c6d74f06979c2764ee.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.mobilemenu.self-f300b178b850dd461450af9b74c5befd8798c78623dba447d470f96964896ce9.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.mousewheel.min.self-7708858a15c1a92e20a630f682918541ce3dce629071ac084a23ab151665ec1a.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.rd-google-map.self-b5b0850228f2600c9f939f29ae95dac89539ac7f00c2de72280d13a4f6352ddb.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.self-1ccf7b80cfb01f9b1428f5e3ecd53f19cf363c378e0a5d25b1bd50c0621c71b8.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.self-667210b0d5b01710fbf80af1bfed3aeb6cda7f3d406e118a513265b0cc676621.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.sliderPro.min.self-0cdcb375eef8ad30ad00dc79b64cc7525e66ee6457d409a6070ffd9f2be76036.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.touchSwipe.min.self-d6ab94907838f43575d8042a544cebeefe0b5577494fa3ac6cb21d1f158eeae9.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/jquery.ui.totop.self-a0ad537e9d52911361885f5cbb18150c1bd621e06b3f91089192c76187e082f9.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/owl.carousel.min.self-e57e7a15414bfda970aa526ebc85fbb3f2389a3db9b7d85a24bd7e3b62d70171.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/sForm.self-93505f8b6887ff59db9c9ef7466dce296b6ff873c3fa6a3779a250a754f1e8d3.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/superfish.self-c9e62dc523ce8a7fdcf9af8eb52688cb0ba8d30b42b178fbc103bdcf44fb757d.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/tm-scripts.self-e8d84f5586cfea0716167d3ff9aae66667ce2b1028dd11cf390fdcc896eeaef6.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/tmstickup.self-ca6b565a58bd4e79a5373ef570bf5dfb43887dd66b88b0a61d8ec10207834767.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for ::1 at 2018-07-31 19:04:38 +0300
+
+
+Started GET "/assets/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/assets/wow.self-4fc049501415815d5fa555bc735c359c381441d2107851b32b30ae5ba192a892.js?body=1" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/assets/application.self-8904251b0783e64884dee33114e175e7370823e1b2a616216a3dfe49d548fc62.js?body=1" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/assets/device.min.js" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDYvejZzNW54bnRwX18uanBnIl1d" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDYvejZzNW54bnRwX18uanBnIl1d 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMDkvMjUvMjl3dTJ5YXBncV9fMi5qcGciXV0" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMDkvMjUvMjl3dTJ5YXBncV9fMi5qcGciXV0 200
+
+
+Started GET "/assets/bootstrap.min.js" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/assets/tm-scripts.js" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTAvMDIvMWViaGdxOHRydV9fanBnLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTAvMDIvMWViaGdxOHRydV9fanBnLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMTAvMnJ5NjE3ZzhmdF9fMy5qcGciXV0" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMTAvMnJ5NjE3ZzhmdF9fMy5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDQvNDRlbHAzbHc5a19fLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDQvNDRlbHAzbHc5a19fLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMTEvMzl1YTJ6ZjdxNF9fMl8xLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMTEvMzl1YTJ6ZjdxNF9fMl8xLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMTIvN2l0eGV4dTA2N19fM19fLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMTIvN2l0eGV4dTA2N19fM19fLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTEvMTIvNjcwMmpjdm5hX0lNR185OTY1LkpQRyJdXQ" for ::1 at 2018-07-31 19:04:39 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTEvMTIvNjcwMmpjdm5hX0lNR185OTY1LkpQRyJdXQ 200
+
+
+Started GET "/assets/bootstrap.self-879fe26c59b08f795f0a6e826c952eb8cf97bab54679a122fe617278d9d2257f.css?body=1" for ::1 at 2018-07-31 19:04:39 +0300
+
+
+Started GET "/assets/responsive-embed.self-2a4ad23272693d9659bad39902115d7ddf09b997db4cfab134e5ee6db414bcb5.css?body=1" for ::1 at 2018-07-31 19:04:40 +0300
+
+
+Started GET "/assets/animate.css" for ::1 at 2018-07-31 19:04:40 +0300
+
+
+Started GET "/assets/style.self-99e2f9dc780b92f4631dac23b93ff073f9dff4eb8ec11cd649819a25ac115832.css?body=1" for ::1 at 2018-07-31 19:04:40 +0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2018-07-31 19:04:40 +0300
+
+
+Started GET "/assets/TMForm.self-a88d1bc3b823e791e7a06b36a0fcacbaa35f08f756996522be918ceb56fb8a91.js?body=1" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/jquery.cookie.js" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/superfish.js" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/jquery.rd-navbar.js" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/wow.js" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/jquery.rd-parallax.js" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/assets/page-1_img6.jpg" for ::1 at 2018-07-31 19:04:41 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNzNuczhxeHA3Yl9fMDAxLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNzNuczhxeHA3Yl9fMDAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNXR6cTZ0enYzeF9kaXBfbW9sb3ppbmE4LmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNXR6cTZ0enYzeF9kaXBfbW9sb3ppbmE4LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvMzI5OGY0YXE3OV9kaXBfbW9sb3ppbmExMC5qcGciXV0" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvMzI5OGY0YXE3OV9kaXBfbW9sb3ppbmExMC5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvZjhjNnI0Z28yX2RpcF9tb2xvemluYTEyLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvZjhjNnI0Z28yX2RpcF9tb2xvemluYTEyLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvOHI0MGZ2cDEyNV9tb2xvel9kaXAxLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvOHI0MGZ2cDEyNV9tb2xvel9kaXAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvN20zNGwyN3NjOV9kaXBfbW9sb3ppbmExMy5qcGciXV0" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvN20zNGwyN3NjOV9kaXBfbW9sb3ppbmExMy5qcGciXV0 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNDRyOHlodmpzal9fMDAxLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNDRyOHlodmpzal9fMDAxLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvNXVia2R3anpjdl9kaXBfbW9sb3ppbmE5LmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvNXVia2R3anpjdl9kaXBfbW9sb3ppbmE5LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvM3ExaTd1bDcyMV8yLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvM3ExaTd1bDcyMV8yLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvOXNuOGZkdGpxOV80LmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvOXNuOGZkdGpxOV80LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvNmZ4aHByMG1oMl8zLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvNmZ4aHByMG1oMl8zLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvNmRmd3g3azQ1aV8xLmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvNmRmd3g3azQ1aV8xLmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvMTR2bXhydXo2M181LmpwZyJdXQ" for ::1 at 2018-07-31 19:04:41 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvMTR2bXhydXo2M181LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMDUvMDgvOHJzaXk1M3BkN182LmpwZyJdXQ" for ::1 at 2018-07-31 19:04:42 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMDUvMDgvOHJzaXk1M3BkN182LmpwZyJdXQ 200
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDUvN2FvZWNwM3V2eV9kaXBfbW9sb3ppbmExMS5qcGciXV0" for ::1 at 2018-07-31 19:04:42 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDUvN2FvZWNwM3V2eV9kaXBfbW9sb3ppbmExMS5qcGciXV0 200
+
+
+Started GET "/assets/jquery.easing.1.3.js" for ::1 at 2018-07-31 19:04:42 +0300
+
+
+Started GET "/assets/tmstickup.js" for ::1 at 2018-07-31 19:04:42 +0300
+
+
+Started GET "/assets/jquery.ui.totop.js" for ::1 at 2018-07-31 19:04:42 +0300
+
+
+Started GET "/assets/tm/pro_button.png" for ::1 at 2018-07-31 19:04:42 +0300
+
+
+Started GET "/assets/jquery.mobile.customized.min.js" for ::1 at 2018-07-31 19:04:43 +0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2018-07-31 19:04:43 +0300
+
+
+Started GET "/assets/tm/plus-minus.png" for ::1 at 2018-07-31 19:04:43 +0300
+
+
+Started GET "/assets/camera.js" for ::1 at 2018-07-31 19:04:43 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTYvMTAvMDMvNXF6dWxsd255Y19mc2wuanBnIl1d" for ::1 at 2018-07-31 19:04:43 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTYvMTAvMDMvNXF6dWxsd255Y19mc2wuanBnIl1d 200
+
+
+Started GET "/assets/camera-loader.gif" for ::1 at 2018-07-31 19:04:43 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1533056061903" for ::1 at 2018-07-31 19:04:43 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvNDZ3cXExd3M1NV9fLmpwZyJdXQ/%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1533056061903 200
+
+
+Started GET "/assets/tm_panel.css" for ::1 at 2018-07-31 19:04:44 +0300
+
+
+Started GET "/assets/tm_docs.css" for ::1 at 2018-07-31 19:04:44 +0300
+
+
+Started GET "/media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1533056062157" for ::1 at 2018-07-31 19:04:44 +0300
+DRAGONFLY: GET /media/W1siZiIsIjIwMTcvMTEvMTMvMnpnMDJwZTJ0Nl9fLmpwZyJdXQ/%D0%B1%D0%B0%D0%B9%20%D0%B1%D1%8D%D0%BA%20%D0%B2%D0%B5%D1%81%D1%82%D0%B0%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80.jpg?1533056062157 200
+[21531] - Gracefully shutting down workers...
+[21531] === puma shutdown: 2018-07-31 19:04:48 +0300 ===
+[21531] - Goodbye!
+Exiting
